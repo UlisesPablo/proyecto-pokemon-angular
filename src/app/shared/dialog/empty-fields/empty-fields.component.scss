@@ -1,0 +1,36 @@
+::ng-deep.mat-dialog-container {
+    overflow: visible !important;
+    .close-btn-outer{
+        position: relative;
+        button{
+            position: absolute;
+            right: -44px;
+            top: -44px;
+        }
+    }
+    swiper-slide{
+        text-align: center;
+        img{
+            max-width: 100%;
+        }
+    }      
+}
+
+.error-text{
+color: brown !important;
+
+}
+
+.dialog-text{
+    white-space: pre-line; 
+    text-align: center;
+}
+
+.mat-icon-button .mat-icon.mat-icon-lg,
+.mat-icon.mat-icon-lg{
+    font-size: 36px;
+    line-height: 36px;
+    height: 36px;
+    width: 36px;
+    vertical-align: middle;
+}

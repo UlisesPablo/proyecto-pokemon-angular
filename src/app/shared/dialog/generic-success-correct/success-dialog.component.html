@@ -1,0 +1,25 @@
+<!-- <div class="close-btn-outer">
+  <button mat-mini-fab color="primary" (click)="close()"><mat-icon>close</mat-icon></button>
+</div> -->
+<div mat-dialog-content class="w-100" ngClass.gt-xs="wx-250">
+  <div fxLayout="column" fxLayoutAlign="space-evenly center"  class="w-100">
+      <div fxFlex="90" >
+        <mat-icon fxFlex="15" class="mat-icon-lg success-text">check_circle_outline</mat-icon>
+      </div>
+      <div >
+          <h2 class="dialog-text">
+            {{message}}
+          </h2>
+      </div>
+  </div>
+</div>
+
+<div mat-dialog-actions class="row" style="text-align: center;" *ngIf="showBtn">
+  <div>
+    <button type="button" mat-raised-button color="primary" style="width:80px" (click)="dialogRef.close()">
+      {{'general.accept' | translate}}</button>
+      <br>
+  <br>
+  </div>
+  
+</div>

@@ -1,0 +1,22 @@
+<div  class="w-100 mt-2 mb-2" ngClass.gt-xs="wx-250">
+  <div fxLayout="column" fxLayoutAlign="space-evenly center"  class="w-100 dialog-text">
+      <div fxFlex="150">
+          <h2 class="warn-text">{{message}}</h2>
+      </div>
+
+      <div class="row" style="text-align: center;" >
+        
+        <div class="col-md-6">
+          <button type="button" mat-raised-button color="primary" style="width:80px"  (click)="dialogRef.close(true)">
+            {{yes}}</button>
+        </div>
+
+        <div class="col-md-6">
+          <button type="button" mat-raised-button color="primary" style="width:80px" (click)="dialogRef.close(false)">
+            {{no}}</button>
+        </div>
+      </div>
+
+
+  </div>
+</div>

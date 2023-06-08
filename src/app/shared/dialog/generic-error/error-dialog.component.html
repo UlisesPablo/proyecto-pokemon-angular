@@ -1,0 +1,15 @@
+<div class="close-btn-outer">
+  <button mat-mini-fab color="primary" (click)="close()"><mat-icon>close</mat-icon></button>
+</div>
+<div mat-dialog-content class="w-100 mt-2 mb-2" ngClass.gt-xs="wx-250">
+  <div fxLayout="column" fxLayoutAlign="space-evenly center"  class="w-100">
+      <div fxFlex="90" class="mb-2">
+        <mat-icon fxFlex="15" class="mat-icon-lg error-text">error_outline</mat-icon>
+      </div>
+      <div fxFlex="150">
+          <h2 class="dialog-text">
+            {{message}}
+          </h2>
+      </div>
+  </div>
+</div>
